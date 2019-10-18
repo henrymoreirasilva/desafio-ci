@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  golang:
+    build: .
+    container_name: golang
+    volumes:
+      - .:$GOPATH/src/soma
+    environment:
+      - GOPATH=$PWD
