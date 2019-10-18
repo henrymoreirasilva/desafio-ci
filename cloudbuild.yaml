@@ -4,7 +4,7 @@ steps:
   name: "gcr.io/$PROJECT_ID/docker-compose"
   args: [ '-f', 'docker-compose.yaml', 'up', '-d']
 
-- id: "Rodando teste unitario"
+- id: "Rodando teste unitário"
   name: "gcr.io/cloud-builders/go"
   args: ['test']
   env: ['GOPATH=.']
