@@ -6,8 +6,8 @@ steps:
 
 - id: "Salvando imagem no GCR"
   name: "gcr.io/cloud-builders/docker"
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/golang', '.']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/go', '.']
 
 images:
-  - 'gcr.io/$PROJECT_ID/go:1.13.1-stretch'
+  - 'gcr.io/$PROJECT_ID/go'
 
