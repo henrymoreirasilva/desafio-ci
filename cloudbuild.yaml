@@ -9,5 +9,5 @@ steps:
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/golang', '.']
 
 images:
-  - 'gcr.io/$PROJECT_ID/go:latest'
+  - 'gcr.io/$PROJECT_ID/go:1.13.1'
 
