@@ -9,7 +9,7 @@ steps:
   args: ['test']
   env: ['GOPATH=.']
 
-- id: "Salvando imagem no GCR"
+- id: "Salvando imagem GO no GCR"
   name: "gcr.io/cloud-builders/docker"
   args: ['build', '-t', 'gcr.io/$PROJECT_ID/go', '.']
 
